@@ -1,0 +1,68 @@
+
+.icon-chevronright:after, .more:after, .icon-external:after {
+    top: -.08em;
+}
+
+.icon-wrapper .icon, .icon-wrapper .icon-after:after, .icon-wrapper .icon-before:before, .icon-wrapper .more:not(.icon-before):after {
+    position: relative;
+}
+
+.xsmall {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .xsmall {
+        display: block;
+    }
+}
+
+sup {
+    font-size: 1em;
+    top: 0;
+}
+
+[data-module-template] [data-unit-id] .unit-wrapper .footnote a:not(.unit-link):hover {
+    text-decoration: none;
+}
+
+/* ribbon */
+.main [data-module-template="ribbon"] .iphone-ti-ribbon-copy sup {
+    font-size: 14px;
+    top: 0;
+}
+
+.main [data-module-template="ribbon"] .iphone-ti-ribbon-copy {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1068px) {
+    .main [data-module-template="ribbon"] .iphone-ti-ribbon-copy {
+        width: 82.5%;
+        max-width: none;
+    }
+}
+
+.main [data-module-template="ribbon"] .typography-caption {
+    font-size: 14px;
+}
+
+.main [data-module-template="ribbon"] .iphone-ti-ribbon-copy sup {
+    top: -.5em;
+    position: relative;
+    font-size: .6em;
+    vertical-align: baseline;
+}
+
+.main [data-module-template="ribbon"] .iphone-ti-ribbon-copy sup a {
+    text-decoration: none;
+    color: #1d1d1f;
+}
+
+.main [data-module-template="ribbon"] .iphone-ti-ribbon-copy sup a:hover {
+    color: #06c;
+}
+
+.ribbon-link.more {
+    display: inline-block;
+}

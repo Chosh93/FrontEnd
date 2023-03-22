@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex-container{
+    height: 50px;
+    background-color: bisque;
+    border: 1px solid black;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.flex-item{
+    width: 80px;
+    margin: 2px;
+    text-align: center;
+    border: 1px solid darkblue;
+    color: white;
+    background-color: orange;
+}
+.flex-item:nth-child(2n){
+    background-color: orangered;
+}
