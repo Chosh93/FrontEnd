@@ -2,23 +2,67 @@
     margin: 0;
     padding: 0;
 }
-.flex-container{
-    height: 50px;
-    background-color: bisque;
-    border: 1px solid black;
+body{
     display: flex;
-    width: 100vw;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+}
+.globalnav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    background-color: #434344;
 }
-.flex-item{
-    width: 80px;
-    margin: 2px;
-    text-align: center;
-    border: 1px solid darkblue;
-    color: white;
-    background-color: orange;
+.globalnav .logo{
+    height: 70%;
+    width: 100px;
+    justify-content: right;
 }
-.flex-item:nth-child(2n){
-    background-color: orangered;
+.globalnav .logo2{
+    height: 70%;
+    width: 0%;
+    justify-content: left;
+}
+.globalnav .logo3{
+    height: 70%;
+    width: 0%;
+    justify-content: left;
+}
+.globalnav .logo .image{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/로고.png);
+}
+.globalnav .logo2 .image{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/서치.png);
+}
+.globalnav .logo3 .image{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/바구니.png);
+}
+.globalnav .menulist{
+    margin: 5px;
+    width: 70px;
+    font-size: 10px;
+    color: aliceblue;
 }
